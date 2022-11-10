@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adhesivos</title>
+    <link rel="stylesheet" href="estilos.css"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="script.js"></script>
+    <script defer src="stock.js"></script>
+    <script defer src="modal.js"></script>
+    <script defer src="app.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+<body> 
+    <header class="Cabecera">
+    <MARQUEE WIDTH="80%" BEHAVIOR="alternate"> <IMG SRC="Portada/Inversiones_Papuro.jpg"> </MARQUEE>
+    </header> 
+    <nav>
+        <ul class="Menú">
+            <li><a href= "index.html">Inicio</a></li>
+            <li><a href= "Adhesivos.html" >Adhesivos</a></li>
+            <li><button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button></li>
+        </ul>
+    </nav>
+    <div class="clearfix"></div> 
+    <div class="wrap">
+        <h1>Adhesivos</h1>
+        <div class="store-wrapper">
+            <nav>
+                <ul class="marca_lista">
+                    <h1>Eliga una marca para tu búsqueda: </h1>
+                    <li><a href="#" class="marca_item" marca="all"><img src="Portada/TODO.png"></a></li>
+                    <li><a href="#" class="marca_item" marca="UHU"><img src="Portada/UHU.png"></a></li>
+                    <li><a href="#" class="marca_item" marca="TEKNO"><img src="Portada/TEKNO.png"></a></li>
+                    <li><a href="#" class="marca_item" marca="TOPEX"><img src="Portada/TOPEX.png"></a></li>
+                    <li><a href="#" class="marca_item" marca="SOLDIMIX"><img src="Portada/SOLDIMIX.jpg"></a></li>
+                    <li><a href="#" class="marca_item" marca="SIKA"><img src="Portada/SIKA.png"></a></li>
+                </ul>
+            </nav>
+            <main id="contenedor-productos"></main>
+            <div class="modal-contenedor">
+                <div class="modal-carrito">
+                <h3>Carrito</h3>
+                <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+                <div id="carrito-contenedor">
+                </div>
+                <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+                <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
+                </div>
+            </div>
+            <section class="producto-lista">
+                <div class="producto-item" marca="UHU">
+                    <img src="Adhesivos/Uhu Adhesivo Multiuso 60ml.jpg" alt="">
+                    <p>UHU Adhesivo Multiuso 60ml.</p>
+                    <b>S/ 12.90 C/U</b>
+                    <a href="#">COMPRAR</a>
+                </div>
+                <div class="producto-item" marca="UHU">
+                    <img src="Adhesivos/Uhu Adhesivo de Montaje Ultra Fuerte 100gr.jpg" alt="">
+                    <p>UHU Adhesivo de Montaje Ultra Fuerte 100gr.</p>
+                    <b>S/ 28.00 C/U</b> 
+                    <a href="#">COMPRAR</a>
+                </div>
+                <div class="producto-item" marca="UHU">
+                    <img src="Adhesivos/Uhu Adhesivo de contacto Liquido 33ml.jpg" alt="">
+                    <p>Uhu Adhesivo de contacto Liquido 33ml.</p>
+                    <b>S/ 16.30 C/U</b> 
+                    <a href="#">COMPRAR</a>
+                </div>
+                <div class="producto-item" marca="UHU">
+                    <img src="Adhesivos/Uhu Adhesivo Multiuso 35ml.jpg" alt="">
+                    <p>UHU Adhesivo Multiuso 35ml.</p>
+                    <b>S/ 14.00 C/U</b> 
+                    <a href="#">COMPRAR</a>
+                </div>
+                <div class="producto-item" marca="UHU">
+                    <img src="Adhesivos/Uhu Adhesivo epóxico Ultra Fuerte 14ml.jpg" alt="">
+                    <p>UHU Adhesivo epóxico Ultra Fuerte 14ml.</p>
+                    <b>S/ 25.90C/U</b>
+                    <a href="#">COMPRAR</a>
+                </div>
+                <div class="producto-item" marca="TEKNO">
+                    <img src="Adhesivos/Tekno Adhesivo Enchape Terochap 1gl.jpg" alt="">
+                    <p>TEKNO Adhesivo Enchape Terochap 1gl.</p>
+                    <b>S/ 75.00 C/U</b> 
+                    <a href="#">COMPRAR</a>
+                </div>
+                <div class="producto-item" marca="TEKNO">
+                    <img src="Adhesivos/Tekno Adhesivo Terokal Record 1gl.jpg" alt="">
+                    <p>TEKNO Adhesivo Terokal Record 1gl.</p>
+                    <b>S/ 110.00 C/U</b> 
+                    <a href="#">COMPRAR</a>
+                </div>
+                <div class="producto-item" marca="TEKNO">
+                    <img src="Adhesivos/Tekno Adhesivo Sintético Teknocola Extra 1L.jpg" alt="">
+                    <p>TEKNO Adhesivo Sintético Teknocola Extra 1L.</p>
+                    <b>S/ 13.00 C/U</b> 
+                    <a href="#">COMPRAR</a>
+                </div>
+                <div class="producto-item" marca="TEKNO">
+                    <img src="Adhesivos/Tekno Adhesivo Sintético Teknocola Clásica 1gl.jpg" alt="">
+                    <p>TEKNO Adhesivo Sintético Teknocola Clásica 1gl.</p>
+                    <b>S/ 40.00 C/U</b> 
+                    <a href="#">COMPRAR</a>
+                </div>
+                <div class="producto-item" marca="TEKNO">
+                    <img src="Adhesivos/Tekno Adhesivo Enchape Terochap 5gl.jpg" alt="">
+                    <p>TEKNO Adhesivo Enchape Terochap 5gl.</p>
+                    <b>S/ 320.00 C/U</b> 
+                    <a href="#">COMPRAR</a>
+                </div>
+                <div class="producto-item" marca="TOPEX">
+                    <a href="Adhesivo Pegatodo 1gl.html"><img src="Adhesivos/Topex Adhesivo Pegatodo 1gl.jpg" alt=""></a>
+                    <p>TOPEX Adhesivo Pegatodo 1gl.</p>
+                    <b>S/ 63.40 C/U</b> 
+                    <a href="#">COMPRAR</a>
+                </div>
+                <div class="producto-item" marca="TOPEX">
+                    <a href="Adhesivo montaje multiuso 100gr.html"><img src="Adhesivos/Topex Adhesivo montaje multiuso 100gr.jpg" alt=""></a>
+                    <p>TOPEX Adhesivo montaje multiuso 100gr.</p>
+                    <b>S/ 18.90 C/U</b> 
+                    <a href="#">COMPRAR</a>
+                </div>
+                <div class="producto-item" marca="TOPEX">
+                    <a href="Adhesivo Pegalfombras 1.4gl.html"><img src="Adhesivos/Topex Adhesivo Pegalfombras 1.4gl.jpg" alt=""></a>
+                    <p>TOPEX Adhesivo Pegalfombras 1/4gl.</p>
+                    <b>S/ 27.00 C/U</b> 
+                    <a href="#">COMPRAR</a>
+                </div>
+                <div class="producto-item" marca="TOPEX">
+                    <a href="Adhesivo Enchape 1.4gl.html"><img src="Adhesivos/Topex Adhesivo Enchape 1.4gl.jpg" alt=""></a>
+                    <p>TOPEX Adhesivo Enchape 1/4gl.</p>
+                    <b>S/ 17.50 C/U</b>     
+                    <a href="#">COMPRAR</a>
+                </div>
+                <div class="producto-item" marca="TOPEX">
+                    <a href="Adhesivo Enchape 1.32gl.html"><img src="Adhesivos/Topex Adhesivo Enchape 1.32gl.jpg" alt=""></a>
+                    <p>TOPEX Adhesivo Enchape 1/32gl.</p>
+                    <b>S/ 6.90 C/U</b> 
+                    <a href="#">COMPRAR</a>
+                </div>
+                <div class="producto-item" marca="SOLDIMIX">
+                    <a href="Adhesivo Ultra Fuerte 900gr.html"><img src="Adhesivos/Soldimix Adhesivo Ultra Fuerte 900gr.jpg" alt=""></a>
+                    <p>SOLDIMIX Adhesivo Ultra Fuerte 900gr.</p>
+                    <b>S/ 129.90 M2</b>
+                    <a href="#">COMPRAR</a>
+                </div>
+                <div class="producto-item" marca="SOLDIMIX">
+                    <a href="Adhesivo extra fuerte 35gr.html"><img src="Adhesivos/Soldimix Adhesivo extra fuerte 35gr.jpg" alt=""></a>
+                    <p>SOLDIMIX Adhesivo extra fuerte 35gr.</p>
+                    <b>S/ 10.50 C/U</b>
+                    <a href="#">COMPRAR</a>
+                </div>
+                <div class="producto-item" marca="SOLDIMIX">
+                    <a href="Adhesivo Moldimix.html"><img src="Adhesivos/Soldimix Adhesivo Moldimix.jpg" alt=""></a>
+                    <p>SOLDIMIX Adhesivo Moldimix</p>
+                    <b>S/ 6.50 C/U</b>
+                    <a href="#">COMPRAR</a>
+                </div>
+                <div class="producto-item" marca="SOLDIMIX">
+                    <a href="Adhesivo Pegamento Instantáneo 1.5g.html"><img src="Adhesivos/Soldimix Pegamento Instantáneo 1.5g.jpg" alt=""></a>
+                    <p>SOLDIMIX Pegamento Instantáneo 1.5g.</p>
+                    <b>S/ 5.50 C/U</b>
+                    <a href="#">COMPRAR</a>
+                </div>
+                <div class="producto-item" marca="SOLDIMIX">
+                    <a href="Adhesivo Soldadura en Frío Ultra Fuerte 65g.html"> <img src="Adhesivos/Soldimix Soldadura en Frío Ultra Fuerte 65g.jpg" alt=""></a>
+                    <p>SOLDIMIX Soldadura en Frío Ultra Fuerte 65g.</p>
+                    <b>S/ 25.00 C/U</b>
+                    <a href="#">COMPRAR</a>
+                </div>
+                <div class="producto-item" marca="SIKA">
+                    <a href="Adhesivo para Montaje Sika MaxTak 300ml.html"> <img src="Adhesivos/Sika Adhesivo para Montaje Sika MaxTak 300ml.jpg" alt=""></a>
+                    <p>SIKA Adhesivo para Montaje Sika MaxTak 300ml</p>
+                    <b>S/ 22.50 C/U</b>
+                    <a href="#">COMPRAR</a>
+                </div>
+                <div class="producto-item" marca="SIKA">
+                    <a href="Adhesivo de Alta Resistencia Sikaflex 112 Crystal Clear 290ml.html"> <img src="Adhesivos/Sika Adhesivo de Alta Resistencia Sikaflex 112 Crystal Clear 290ml.jpg" alt=""></a>
+                    <p>SIKA Adhesivo de Alta Resistencia Sikaflex 112 Crystal Clear 290ml</p>
+                    <b>S/ 53.90 C/U</b>
+                    <a href="#">COMPRAR</a>
+                </div>
+                <div class="producto-item" marca="SIKA">
+                    <a href="Adhesivo Transparente Sika MaxTack 300ml.html"> <img src="Adhesivos/Sika Adhesivo Transparente Sika MaxTack 300ml.jpg" alt=""></a>
+                    <p>SIKA Adhesivo Transparente Sika MaxTack 300ml</p>
+                    <b>S/ 30.00 C/U</b>
+                    <a href="#">COMPRAR</a>
+                </div>
+                <div class="producto-item" marca="SIKA">
+                    <a href="Adhesivo para Montaje Sika MaxTak 100ml.html"> <img src="Adhesivos/Sika Adhesivo para Montaje Sika MaxTak 100ml.jpg" alt=""></a>
+                    <p>SIKA Adhesivo para Montaje Sika MaxTak 100ml</p>
+                    <b>S/ 18.90 C/U</b>
+                    <a href="#">COMPRAR</a>
+                </div>
+            </section>
+        </div>  
+    </div>
+</body>
+</html>
