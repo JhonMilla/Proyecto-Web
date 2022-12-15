@@ -89,7 +89,7 @@ function loadHtml(){
             <img src="${image}" alt="">
             <div class="item-content">
                 <h5>${title}</h5>
-                <h5 class="cart-price">S/.${price}</h5>
+                <h5 class="cart-price">USD${price}</h5>
                 <h6>Cantidad: ${amount}</h6>
             </div>
             <span class="delete-product" data-id="${id}">X</span>
