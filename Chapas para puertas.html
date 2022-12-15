@@ -17,6 +17,21 @@
         <ul class="Menú">
             <li><a href= "index.html">Inicio</a></li>
             <li><a href= "Chapas para puertas.html" >Chapas para puertas y cerraduras</a></li>
+            <li>
+                <div class="header-section container">
+                    <div>
+                        <img onmouseover="showCart(this)" class="cart" src="./img/cart.png" alt="">
+                        <p class="count-product">0</p>
+                    </div>
+                    <div class="cart-products" id="products-id">
+                        <p class="close-btn" onclick="closeBtn()">X</p>
+                        <h3>Mi carrito</h3>
+                        <div class="card-items">
+                        </div>
+                        <h2>Total: S/.<strong class="price-total">0</strong> </h2>
+                    </div>
+                </div>
+            </li>
         </ul>
     </nav>
     <div class="clearfix"></div> 
@@ -34,159 +49,321 @@
                     <li><a href="#" class="marca_item" marca="YALE"><img src="Portada/YALE.jpg"></a></li>
                 </ul>
             </nav>
+            <section class="container">
             <section class="producto-lista">
+            <div class="products">
+                <div class="carts">
                 <div class="producto-item" marca="CANTOL">
+                    <div>
                     <img src="Chapas para puertas y cerraduras/Cantol/Cerradura Blindada 880(236.90).jpg" alt="">
-                    <p>CANTOL Cerradura Blindada 880</p>
+                    <p>S/.<span>236.90 </span></p>
+                    </div>
+                    <b>CANTOL Cerradura Blindada 880.</b>
                     <b>S/ 236.90 C/U</b>
-                    <a href="#">COMPRAR</a>
+                    <p class="title">CANTOL Cerradura Blindada 880.</p>
+                    <a href="" data-id="1" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="CANTOL">
+                    <div>
                     <img src="Chapas para puertas y cerraduras/Cantol/Cerradura Manija Hilda Baño Acero Inoxidable(57.90).jpg" alt="">
-                    <p>CANTOL Cerradura Manija Hilda Baño Acero Inoxidable</p>
+                    <p>S/.<span>57.90</span></p>
+                    </div>
+                    <b>CANTOL Cerradura Manija Hilda Baño Acero Inoxidable</b>
                     <b>S/ 57.90 C/U</b>
-                    <a href="#">COMPRAR</a>
+                    <p class="title">CANTOL Cerradura Manija Hilda Baño Acero Inoxidable</p>
+                    <a href="" data-id="2" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="CANTOL">
+                    <div>
                     <img src="Chapas para puertas y cerraduras/Cantol/Cerradura Pomo Dormitorio Acero(49.90).jpg" alt="">
-                    <p>CANTOL Cerradura Pomo Dormitorio Acero</p>
+                    <p>S/.<span>49.90</span></p>
+                    </div>
+                    <b>CANTOL Cerradura Pomo Dormitorio Acero</b>
                     <b>S/ 49.90 C/U</b>
-                    <a href="#">COMPRAR</a>
+                    <p class="title">CANTOL Cerradura Pomo Dormitorio Acero</p>
+                    <a href="" data-id="3" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="CANTOL">
+                    <div>
                     <img src="Chapas para puertas y cerraduras/Cantol/Cerradura Sobre Blindada 400(94.90).jpg" alt="">
-                    <p>CANTOL Cerradura Sobre Blindada 400</p>
+                    <p>S/.<span>94.90</span></p>
+                    </div>
+                    <b>CANTOL Cerradura Sobre Blindada 400</b>
                     <b>S/ 94.90 C/U</b>
-                    <a href="#">COMPRAR</a>
+                    <p class="title">CANTOL Cerradura Sobre Blindada 400</p>
+                    <a href="" data-id="4" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="CANTOL">
+                    <div>
                     <img src="Chapas para puertas y cerraduras/Cantol/Cerradura blindada súper 700 (99.90).jpg" alt="">
-                    <p>CANTOL Cerradura blindada súper 700</p>
+                    <p>S/.<span>99.90</span></p>
+                    </div>
+                    <b>CANTOL Cerradura blindada súper 700</b>
                     <b>S/ 99.90 C/U</b>
-                    <a href="#">COMPRAR</a>
+                    <p class="title">CANTOL Cerradura blindada súper 700</p>
+                    <a href="" data-id="5" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="FIXSER">
+                    <div>
                     <img src="Chapas para puertas y cerraduras/FIXSER/Cerradura Cierre Central Niquel(29.90).jpg" alt="">
-                    <p>FIXSER Cerradura Cierre Central Niquel</p>
+                    <p>S/.<span>29.90</span></p>
+                    </div>
+                    <b>FIXSER Cerradura Cierre Central Niquel</b>
                     <b>S/ 29.90 C/U</b>
-                    <a href="#">COMPRAR</a>
+                    <p class="title">FIXSER Cerradura Cierre Central Niquel</p>
+                    <a href="" data-id="6" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="FIXSER">
+                    <div>
                     <img src="Chapas para puertas y cerraduras/FIXSER/Cerradura closet cromo(29.90).jpg" alt="">
-                    <p>FIXSER Cerradura closet cromo</p>
+                    <p>S/.<span>29.90</span></p>
+                    </div>
+                    <b>FIXSER Cerradura closet cromo</b>
                     <b>S/ 29.90 C/U</b>
-                    <a href="#">COMPRAR</a>
+                    <p class="title">FIXSER Cerradura closet cromo</p>
+                    <a href="" data-id="7" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="FIXSER">
+                    <div>
                     <img src="Chapas para puertas y cerraduras/FIXSER/Cerradura Pomo Baño Dorado(42.90).jpg" alt="">
-                    <p>FIXSER Cerradura Pomo Baño Dorado</p>
+                    <p>S/.<span>42.90</span></p>
+                    </div>
+                    <b>FIXSER Cerradura Pomo Baño Dorado</b>
                     <b>S/ 42.90 C/U</b>
-                    <a href="#">COMPRAR</a>
+                    <p class="title">FIXSER Cerradura Pomo Baño Dorado</p>
+                    <a href="" data-id="8" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="FIXSER">
+                    <div>
                     <img src="Chapas para puertas y cerraduras/FIXSER/Cerradura Pomo Dormitorio Dorado(44.90).jpg" alt="">
-                    <p>FIXSER Cerradura Pomo Dormitorio Dorado</p>
+                    <p>S/.<span>44.90</span></p>
+                    </div>
+                    <b>FIXSER Cerradura Pomo Dormitorio Dorado</b>
                     <b>S/ 44.90 C/U</b>
-                    <a href="#">COMPRAR</a>
+                    <p class="title">FIXSER Cerradura Pomo Dormitorio Dorado</p>
+                    <a href="" data-id="9" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="FIXSER">
+                    <div>
                     <img src="Chapas para puertas y cerraduras/FIXSER/Cerradura Pomo Dormitorio Acero(36.90).jpg" alt="">
-                    <p>FIXSER Cerradura Pomo Dormitorio Acero</p>
+                    <p>S/.<span>36.90</span></p>
+                    </div>
+                    <b>FIXSER Cerradura Pomo Dormitorio Acero</b>
                     <b>S/ 36.90 C/U</b>
-                    <a href="#">COMPRAR</a>
+                    <p class="title">FIXSER Cerradura Pomo Dormitorio Acero</p>
+                    <a href="" data-id="10" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="FORTE">
+                    <div>
                     <img src="Chapas para puertas y cerraduras/Forte/Cerradura AS840 Enigma Dorada(179.90).jpg" alt="">
-                    <p>FORTE Cerradura AS840 Enigma Dorada</p>
+                    <p>S/.<span>179.90</span></p>
+                    </div>
+                    <b>FORTE Cerradura AS840 Enigma Dorada</b>
                     <b>S/ 179.90 C/U</b> 
-                    <a href="#">COMPRAR</a>
+                    <p class="title">FORTE Cerradura AS840 Enigma Dorada</p>
+                    <a href="" data-id="11" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="FORTE">
+                    <div>
                     <img src="Chapas para puertas y cerraduras/Forte/Cerradura de Sobreponer BK-230(68.90).jpg" alt="">
-                    <p>FORTE Cerradura de Sobreponer BK-230</p>
+                    <p>S/.<span>68.90</span></p>
+                    </div>
+                    <b>FORTE Cerradura de Sobreponer BK-230</b>
                     <b>S/ 68.90 C/U</b> 
-                    <a href="#">COMPRAR</a>
+                    <p class="title">FORTE Cerradura de Sobreponer BK-230</p>
+                    <a href="" data-id="12" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="FORTE">
-                    <img src="Chapas para puertas y cerraduras/Forte/Cerradura Manija Baño Bronce Quemado(88.90).jpg" alt="">
-                    <p>FORTE Cerradura Manija Baño Bronce Quemado</p>
+                    <div>
+                    <img src="Chapas para puertas y cerraduras/Forte/Cerradura Manija Baño Bronce Quemado(88.90).jpg" alt=""> 
+                    <p>S/.<span>88.90</span></p>
+                    </div>
+                    <b>FORTE Cerradura Manija Baño Bronce Quemado</b>
                     <b>S/ 88.90 C/U</b> 
-                    <a href="#">COMPRAR</a>
+                    <p class="title">FORTE Cerradura Manija Baño Bronce Quemado</p>
+                    <a href="" data-id="13" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="FORTE">
+                    <div>
                     <img src="Chapas para puertas y cerraduras/Forte/Cerradura Manija Cuadrada Dormitorio Acero Inoxidable(89.90).jpg" alt="">
-                    <p>FORTE Cerradura Manija Cuadrada Dormitorio Acero Inoxidable</p>
+                    <p>S/.<span>89.90</span></p>
+                    </div>
+                    <b>FORTE Cerradura Manija Cuadrada Dormitorio Acero Inoxidable</b>
                     <b>S/ 89.90 C/U</b> 
-                    <a href="#">COMPRAR</a>
+                    <p class="title">FORTE Cerradura Manija Cuadrada Dormitorio Acero Inoxidable</p>
+                    <a href="" data-id="14" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="FORTE">
+                    <div>
                     <img src="Chapas para puertas y cerraduras/Forte/Cerradura Pomo Dormitorio Bronce Quemado(49.90).jpg" alt="">
-                    <p>FORTE Cerradura Pomo Dormitorio Bronce Quemado</p>
+                    <p>S/.<span>49.90</span></p>
+                    </div>
+                    <b>FORTE Cerradura Pomo Dormitorio Bronce Quemado</b>
                     <b>S/ 49.90 C/U</b> 
-                    <a href="#">COMPRAR</a>
+                    <p class="title">FORTE Cerradura Pomo Dormitorio Bronce Quemado</p>
+                    <a href="" data-id="15" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="TRAVEX">
+                    <div>
                     <img src="Chapas para puertas y cerraduras/travex/Cerradura de Sobreponer Blindada 130(59.90).jpg" alt="">
-                    <p>TRAVEX Cerradura de Sobreponer Blindada 130</p>
+                    <p>S/.<span>59.90</span></p>
+                    </div>
+                    <b>TRAVEX Cerradura de Sobreponer Blindada 130</b>
                     <b>S/ 59.90 C/U</b> 
-                    <a href="#">COMPRAR</a>
+                    <p class="title">TRAVEX Cerradura de Sobreponer Blindada 130</p>
+                    <a href="" data-id="16" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="TRAVEX">
+                    <div>
                     <img src="Chapas para puertas y cerraduras/travex/Cerradura de Sobreponer Blindada 970xt Negro(169.90).jpg" alt="">
-                    <p>TRAVEX Cerradura de Sobreponer Blindada 970xt Negro</p>
+                    <p>S/.<span>169.90</span></p>
+                    </div>
+                    <b>TRAVEX Cerradura de Sobreponer Blindada 970xt Negro</b>
                     <b>S/ 169.90 C/U</b> 
-                    <a href="#">COMPRAR</a>
+                    <p class="title">TRAVEX Cerradura de Sobreponer Blindada 970xt Negro</p>
+                    <a href="" data-id="17" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="TRAVEX">
+                    <div>
                     <img src="Chapas para puertas y cerraduras/travex/Cerradura Digital Principal Travex(2.349.90).jpg" alt="">
-                    <p>TRAVEX Cerradura Digital Principal Travex</p>
+                    <p>S/.<span>2.349.90</span></p>
+                    </div>
+                    <b>TRAVEX Cerradura Digital Principal Travex</b>
                     <b>S/ 2.349.90 C/U</b> 
-                    <a href="#">COMPRAR</a>
+                    <p class="title">TRAVEX Cerradura Digital Principal Travex</p>
+                    <a href="" data-id="18" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="TRAVEX">
+                    <div>
                     <img src="Chapas para puertas y cerraduras/travex/Cerradura Embutir Principal Luna X55-i Acero Inoxidable(229.90).jpg" alt="">
-                    <p>TRAVEX Cerradura Embutir Principal Luna X55-i Acero Inoxidable</p>
+                    <p>S/.<span>229.90</span></p>
+                    </div>
+                    <b>TRAVEX Cerradura Embutir Principal Luna X55-i Acero Inoxidable</b>
                     <b>S/ 229.90 C/U</b> 
-                    <a href="#">COMPRAR</a>
+                    <p class="title">TRAVEX Cerradura Embutir Principal Luna X55-i Acero Inoxidable</p>
+                    <a href="" data-id="19" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="TRAVEX">
+                    <div>
                     <img src="Chapas para puertas y cerraduras/travex/Cerradura Manija Travex Dormitorio Liza Bronce Antiguo(79.90).jpg" alt="">
-                    <p>TRAVEX Cerradura Manija Travex Dormitorio Liza Bronce Antiguo</p>
+                    <p>S/.<span>79.90</span></p>
+                    </div>
+                    <b>TRAVEX Cerradura Manija Travex Dormitorio Liza Bronce Antiguo</b>
                     <b>S/ 79.90 C/U</b> 
-                    <a href="#">COMPRAR</a>
+                    <p class="title">TRAVEX Cerradura Manija Travex Dormitorio Liza Bronce Antiguo</p>
+                    <a href="" data-id="20" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="YALE">
+                    <div>
                     <img src="Chapas para puertas y cerraduras/Yale/CERR MAN YALE BANO LONDON BRON(82.90).jpg" alt="">
-                    <p>YALE CERR MAN YALE BANO LONDON BRON</p>
+                    <p>S/.<span>82.90</span></p>
+                    </div>
+                    <b>YALE CERR MAN YALE BANO LONDON BRON</b>
                     <b>S/ 82.90 C/U</b>
-                    <a href="#">COMPRAR</a>
+                    <p class="title">YALE CERR MAN YALE BANO LONDON BRON</p>
+                    <a href="" data-id="21" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="YALE">
+                    <div>
                     <img src="Chapas para puertas y cerraduras/Yale/Combo Cerradura Pomo 3 Dormitorio y 1 Baño(129.90).jpg" alt="">
-                    <p>YALE Combo Cerradura Pomo 3 Dormitorio y 1 Baño</p>
+                    <p>S/.<span>129.90</span></p>
+                    </div>
+                    <b>YALE Combo Cerradura Pomo 3 Dormitorio y 1 Baño</b>
                     <b>S/ 129.90 C/U</b>
-                    <a href="#">COMPRAR</a>
+                    <p class="title">YALE Combo Cerradura Pomo 3 Dormitorio y 1 Baño</p>
+                    <a href="" data-id="22" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="YALE">
+                    <div>
                     <img src="Chapas para puertas y cerraduras/Yale/Manija Lincoln Para Habitación - Yale(82.90).jpg" alt="">
-                    <p>YALE Manija Lincoln Para Habitación - Yale</p>
+                    <p>S/.<span>82.90</span></p>
+                    </div>
+                    <b>YALE Manija Lincoln Para Habitación - Yale</b>
                     <b>S/ 82.90 C/U</b>
-                    <a href="#">COMPRAR</a>
+                    <p class="title">YALE Manija Lincoln Para Habitación - Yale</p>
+                    <a href="" data-id="23" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="YALE">
+                    <div>
                     <img src="Chapas para puertas y cerraduras/Yale/Pack x4 Cerraduras de Pomo dormitorio + 2 baño(119.90).jpg" alt="">
-                    <p>YALE Pack x4 Cerraduras de Pomo dormitorio + 2 baño</p>
+                    <p>S/.<span>119.90</span></p>
+                    </div>
+                    <b>YALE Pack x4 Cerraduras de Pomo dormitorio + 2 baño</b>
                     <b>S/ 119.90 C/U</b>
-                    <a href="#">COMPRAR</a>
+                    <p class="title">YALE Pack x4 Cerraduras de Pomo dormitorio + 2 baño</p>
+                    <a href="" data-id="24" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="YALE">
+                    <div>
                     <img src="Chapas para puertas y cerraduras/Yale/Pomo Para Bodega Carolina Roseta Larga (Acero) - Yale(70.90).jpg" alt="">
-                    <p>YALE Pomo Para Bodega Carolina Roseta Larga (Acero) - Yale</p>
+                    <p>S/.<span>70.90</span></p>
+                    </div>
+                    <b>YALE Pomo Para Bodega Carolina Roseta Larga (Acero) - Yale</b>
                     <b>S/ 70.90 C/U</b>
-                    <a href="#">COMPRAR</a>
+                    <p class="title">YALE Pomo Para Bodega Carolina Roseta Larga (Acero) - Yale</p>
+                    <a href="" data-id="25" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+            </div>
             </section>
+        </section>
+        <script>
+            function showCart(x){
+                document.getElementById("products-id").style.display = "block";
+            }
+            function closeBtn(){
+                 document.getElementById("products-id").style.display = "none";
+            }
+        </script>
         </div>  
     </div>
+    <script src="./custom.js"></script>
 </body>
 </html>

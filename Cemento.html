@@ -17,6 +17,21 @@
         <ul class="Menú">
             <li><a href= "index.html">Inicio</a></li>
             <li><a href= "Accesorio para puertas y ventanas.html" >Cementos y complementos</a></li>
+            <li>
+                <div class="header-section container">
+                    <div>
+                        <img onmouseover="showCart(this)" class="cart" src="./img/cart.png" alt="">
+                        <p class="count-product">0</p>
+                    </div>
+                    <div class="cart-products" id="products-id">
+                        <p class="close-btn" onclick="closeBtn()">X</p>
+                        <h3>Mi carrito</h3>
+                        <div class="card-items">
+                        </div>
+                        <h2>Total: S/.<strong class="price-total">0</strong> </h2>
+                    </div>
+                </div>
+            </li>
         </ul>
     </nav>
     <div class="clearfix"></div> 
@@ -34,159 +49,322 @@
                     <li><a href="#" class="marca_item" marca="ANDINO"><img src="Portada/ANDINO.jpg"></a></li>
                 </ul>
             </nav>
+            <section class="container">
             <section class="producto-lista">
+            <div class="products">
+                <div class="carts">
                 <div class="producto-item" marca="TOPEX">
-                    <img src="Cementos/TOPEX/Cal 2 kg - 11.90 c.u.jpg" alt="">
-                    <p>TOPEX Cal 2 kg</p>
+                    <div>
+                    <img src="Cementos/TOPEX/Cal 2 kg - 11.90 c.u.jpg" alt=""></a>
+                    <p>S/.<span>11.90</span></p>
+                    </div>
+                    <b>TOPEX Cal 2 kg</b>
                     <b>S/ 11.90 C/U</b> 
-                    <a href="#">COMPRAR</a>
+                    <p class="title">TOPEX Cal 2 kg</p>
+                    <a href="" data-id="1" class="btn-add-cart">Agregar al carrito</a>
                 </div>
-                <div class="producto-item" marca="TOPEX">
-                    <img src="Cementos/TOPEX/Cal de Obra x 20 Kg - 15.5 c.u.jpg" alt="">
-                    <p>TOPEX Cal de Obra x 20 Kg </p>
-                    <b>S/ 15.5 C/U</b> 
-                    <a href="#">COMPRAR</a>
                 </div>
+                <div class="carts">
                 <div class="producto-item" marca="TOPEX">
-                    <img src="Cementos/TOPEX/Estuco Uso Exterior 40kg - 10.9 c.u.jpg" alt="">
-                    <p>TOPEX Estuco Uso Exterior 40kg</p>
-                    <b>S/ 10.9 C/U</b> 
-                    <a href="#">COMPRAR</a>
+                    <div>
+                    <img src="Cementos/TOPEX/Cal de Obra x 20 Kg - 15.5 c.u.jpg" alt=""></a>
+                    <p>S/.<span>15.50</span></p>
+                    </div>
+                    <b>TOPEX Cal de Obra x 20 Kg </b>
+                    <b>S/ 15.50 C/U</b>
+                    <p class="title">TOPEX Cal de Obra x 20 Kg</p>
+                    <a href="" data-id="2" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="TOPEX">
-                    <img src="Cementos/TOPEX/Hormigón Secado Rápido 40kg - 18.9 c.u.jpg" alt="">
-                    <p>TOPEX Hormigón Secado Rápido 40kg</p>
+                    <div>
+                    <img src="Cementos/TOPEX/Estuco Uso Exterior 40kg - 10.9 c.u.jpg" alt=""></a>
+                    <p>S/.<span>10.90</span></p>
+                    </div>
+                    <b>TOPEX Estuco Uso Exterior 40kg</b>
+                    <b>S/ 10.90 C/U</b> 
+                    <p class="title">TOPEX Estuco Uso Exterior 40kg</p>
+                    <a href="" data-id="3" class="btn-add-cart">Agregar al carrito</a>
+                </div>
+                </div>
+                <div class="carts">
+                <div class="producto-item" marca="TOPEX">
+                    <div>
+                    <img src="Cementos/TOPEX/Hormigón Secado Rápido 40kg - 18.9 c.u.jpg" alt=""></a>
+                    <p>S/.<span>330.90</span></p>
+                    </div>
+                    <b>TOPEX Hormigón Secado Rápido 40kg</b>
                     <b>S/ 18.9 C/U</b>     
-                    <a href="#">COMPRAR</a>
+                    <p class="title">TOPEX Hormigón Secado Rápido 40kg</p>
+                    <a href="" data-id="4" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="TOPEX">
-                    <img src="Cementos/TOPEX/Mortero Pegador Ladrillo 40kg - 10.9 c.u.jpg" alt="">
-                    <p>TOPEX Mortero Pegador Ladrillo 40kg</p>
+                    <div>
+                    <img src="Cementos/TOPEX/Mortero Pegador Ladrillo 40kg - 10.9 c.u.jpg" alt=""></a>
+                    <p>S/.<span>10.90</span></p>
+                    </div>
+                    <b>TOPEX Mortero Pegador Ladrillo 40kg</b>
                     <b>S/ 10.90 C/U</b> 
-                    <a href="#">COMPRAR</a>
+                    <p class="title">TOPEX Mortero Pegador Ladrillo 40kg</p>
+                    <a href="" data-id="5" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="TOPEX">
-                    <img src="Cementos/TOPEX/Ocre Amarillo x 1 kg - 29.9 c.u.jpg" alt="">
-                    <p>TOPEX Ocre Amarillo x 1 kg</p>
+                    <div>
+                    <img src="Cementos/TOPEX/Ocre Amarillo x 1 kg - 29.9 c.u.jpg" alt=""></a>
+                    <p>S/.<span>29.90</span></p>
+                    </div>
+                    <b>TOPEX Ocre Amarillo x 1 kg</b>
                     <b>S/ 29.90 C/U</b> 
-                    <a href="#">COMPRAR</a>
+                    <p class="title">TOPEX Ocre Amarillo x 1 kg</p>
+                    <a href="" data-id="6" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="TOPEX">
-                    <img src="Cementos/TOPEX/Ocre Negro x 1 kg - 21.9 c.u.jpg" alt="">
-                    <p>TOPEX Ocre Negro x 1 kg</p>
+                    <div>  
+                    <img src="Cementos/TOPEX/Ocre Negro x 1 kg - 21.9 c.u.jpg" alt=""></a>
+                    <p>S/.<span>21.90</span></p>
+                    </div>
+                    <b>TOPEX Ocre Negro x 1 kg</b>
                     <b>S/ 21.90 C/U</b> 
-                    <a href="#">COMPRAR</a>
+                    <p class="title">TOPEX Ocre Negro x 1 kg</p>
+                    <a href="" data-id="7" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="TOPEX">
-                    <img src="Cementos/TOPEX/Ocre Rojo x 1 kg - 28 - c.u.jpg" alt="">
-                    <p>TOPEX Ocre Rojo x 1 kg</p>
+                    <div>
+                    <img src="Cementos/TOPEX/Ocre Rojo x 1 kg - 28 - c.u.jpg" alt=""></a>
+                    <p>S/.<span>28.00</span></p>
+                    </div>
+                    <b>TOPEX Ocre Rojo x 1 kg</b>
                     <b>S/ 28.00 C/U</b> 
-                    <a href="#">COMPRAR</a>
+                    <p class="title">TOPEX Ocre Rojo x 1 kg</p>
+                    <a href="" data-id="8" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="TOPEX">
-                    <img src="Cementos/TOPEX/Topex Dur-31 1kg - 60 c.u.jpg" alt="">
-                    <p>TOPEX Topex Dur-31 1kg </p>
+                    <div>
+                    <img src="Cementos/TOPEX/Topex Dur-31 1kg - 60 c.u.jpg" alt=""></a>
+                    <p>S/.<span>60.00</span></p>
+                    </div>
+                    <b>TOPEX Topex Dur-31 1kg </b>
                     <b>S/ 60.00 C/U</b> 
-                    <a href="#">COMPRAR</a>
+                    <p class="title">TOPEX Topex Dur-31 1kg</p>
+                    <a href="" data-id="9" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="TOPEX">
-                    <img src="Cementos/TOPEX/Yeso 2 kg - 11 c.u.jpg" alt="">
-                    <p>TOPEX Yeso 2 kg </p>
+                    <div>
+                    <img src="Cementos/TOPEX/Yeso 2 kg - 11 c.u.jpg" alt=""></a>
+                    <p>S/.<span>11.00</span></p>
+                    </div>
+                    <b>TOPEX Yeso 2 kg </b>
                     <b>S/ 11.00 C/U</b> 
-                    <a href="#">COMPRAR</a>
+                    <p class="title">TOPEX Yeso 2 kg</p>
+                    <a href="" data-id="10" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="TOPEX">
-                    <img src="Cementos/TOPEX/Mortero para Piso 40kg-10.90.jpg" alt="">
-                    <p>TOPEX Mortero para Piso 40kg </p>
+                    <div>
+                    <img src="Cementos/TOPEX/Mortero para Piso 40kg-10.90.jpg" alt=""></a>
+                    <p>S/.<span>10.90</span></p>
+                    </div>
+                    <b>TOPEX Mortero para Piso 40kg </b>
                     <b>S/ 10.90 C/U</b> 
-                    <a href="#">COMPRAR</a>
+                    <p class="title">TOPEX Mortero para Piso 40kg</p>
+                    <a href="" data-id="11" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="TOPEX">
-                    <img src="Cementos/TOPEX/Mortero de Reparación 5kg-7.99.jpg" alt="">
-                    <p>TOPEX Mortero de Reparación 5kg </p>
+                    <div>
+                    <img src="Cementos/TOPEX/Mortero de Reparación 5kg-7.99.jpg" alt=""></a>
+                    <p>S/.<span>7.99</span></p>
+                    </div>
+                    <b>TOPEX Mortero de Reparación 5kg </b>
                     <b>S/ 7.99 C/U</b> 
-                    <a href="#">COMPRAR</a>
+                    <p class="title">TOPEX Mortero de Reparación 5kg</p>
+                    <a href="" data-id="12" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="TOPEX">
-                    <img src="Cementos/TOPEX/Nivelador de Pisos 25kg-14.90.jpg" alt="">
-                    <p>TOPEX Nivelador de Pisos 25kg </p>
+                    <div>
+                    <img src="Cementos/TOPEX/Nivelador de Pisos 25kg-14.90.jpg" alt=""></a>
+                    <p>S/.<span>14.90</span></p>
+                    </div>
+                    <b>TOPEX Nivelador de Pisos 25kg </b>
                     <b>S/ 14.90 C/U</b> 
-                    <a href="#">COMPRAR</a>
+                    <p class="title">TOPEX Nivelador de Pisos 25kg </p>
+                    <a href="" data-id="13" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="TOPEX">
-                    <img src="Cementos/TOPEX/Ocre Verde x 1 kg-21.60.jpg" alt="">
-                    <p>TOPEX Ocre Verde x 1 kg</p>
+                    <div>
+                    <img src="Cementos/TOPEX/Ocre Verde x 1 kg-21.60.jpg" alt=""></a>
+                    <p>S/.<span>21.60</span></p>
+                    </div>
+                    <b>TOPEX Ocre Verde x 1 kg</b>
                     <b>S/ 21.60 C/U</b> 
-                    <a href="#">COMPRAR</a>
+                    <p class="title">TOPEX Ocre Verde x 1 kg</p>
+                    <a href="" data-id="14" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="TOPEX">
-                    <img src="Cementos/TOPEX/Mortero de Anclaje Nivel 30kg-38.90.jpg" alt="">
-                    <p>TOPEX Mortero de Anclaje Nivel 30kg</p>
+                    <div>
+                    <img src="Cementos/TOPEX/Mortero de Anclaje Nivel 30kg-38.90.jpg" alt=""></a>
+                    <p>S/.<span>38.90</span></p>
+                    </div>
+                    <b>TOPEX Mortero de Anclaje Nivel 30kg</b>
                     <b>S/ 38.90 C/U</b> 
-                    <a href="#">COMPRAR</a>
+                    <p class="title">TOPEX Mortero de Anclaje Nivel 30kg</p>
+                    <a href="" data-id="15" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="CHEMA">
-                    <img src="Cementos/CHEMA/Adhesivo-Chemaweld-5gl-535-c.u.jpg" alt="">
-                    <p>CHEMA Adhesivo Chemaweld 5gl</p>
+                    <div>
+                    <img src="Cementos/CHEMA/Adhesivo-Chemaweld-5gl-535-c.u.jpg" alt=""></a>
+                    <p>S/.<span>535.00</span></p>
+                    </div>
+                    <b>CHEMA Adhesivo Chemaweld 5gl</b>
                     <b>S/ 535.00 C/U</b>
-                    <a href="#">COMPRAR</a>
+                    <p class="title">CHEMA Adhesivo Chemaweld 5gl</p>
+                    <a href="" data-id="16" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="CHEMA">
-                    <img src="Cementos/CHEMA/Cemento-Blanco-1-kg-4.3-c.u.jpg" alt="">
-                    <p>CHEMA Cemento Blanco 1kg</p>
+                    <div>
+                    <img src="Cementos/CHEMA/Cemento-Blanco-1-kg-4.3-c.u.jpg" alt=""></a>
+                    <p>S/.<span>4.30</span></p>
+                    </div>
+                    <b>CHEMA Cemento Blanco 1kg</b>
                     <b>S/ 4.30 C/U</b>
-                    <a href="#">COMPRAR</a>
+                    <p class="title">CHEMA Cemento Blanco 1kg</p>
+                    <a href="" data-id="17" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="CHEMA">
-                    <img src="Cementos/CHEMA/Chema-Estructural-1-GL-92-soles.jpg" alt="">
-                    <p>CHEMA Chema Estructural 1GL</p>
+                    <div>
+                    <img src="Cementos/CHEMA/Chema-Estructural-1-GL-92-soles.jpg" alt=""></a>
+                    <p>S/.<span>92.00</span></p>
+                    </div>
+                    <b>CHEMA Chema Estructural 1GL</b>
                     <b>S/ 92.00 C/U</b>
-                    <a href="#">COMPRAR</a>
+                    <p class="title">CHEMA Chema Estructural 1GL</p>
+                    <a href="" data-id="18" class="btn-add-cart">Agregar al carrito</a>
                 </div>
-                <div class="producto-item" marca="SIKA">
-                    <img src="Cementos/SIKA/Cemento-Blanco-1kg-7.6-c.u.jpg" alt="">
-                    <p>SIKA Cemento Blanco 1kg</p>
-                    <b>S/ 7.6. C/U</b>
-                    <a href="#">COMPRAR</a>
                 </div>
+                <div class="carts">
                 <div class="producto-item" marca="SIKA">
-                    <img src="Cementos/SIKA/Epóxico-para-Anclajes-Sika-Dur-31-x-1kg-75-c.u.jpg" alt="">
-                    <p>SIKA Epóxico para Anclajes Sika Dur 31 x 1kg</p>
+                    <div>
+                    <img src="Cementos/SIKA/Cemento-Blanco-1kg-7.6-c.u.jpg" alt=""></a>
+                    <p>S/.<span>7.60 </span></p>
+                    </div>
+                    <b>SIKA Cemento Blanco 1kg</b>
+                    <b>S/ 7.60 C/U</b>
+                    <p class="title">SIKA Cemento Blanco 1kg</p>
+                    <a href="" data-id="19" class="btn-add-cart">Agregar al carrito</a>
+                </div>
+                </div>
+                <div class="carts">
+                <div class="producto-item" marca="SIKA">
+                    <div>
+                    <img src="Cementos/SIKA/Epóxico-para-Anclajes-Sika-Dur-31-x-1kg-75-c.u.jpg" alt=""></a>
+                    <p>S/.<span>75.00 </span></p>
+                    </div>
+                    <b>SIKA Epóxico para Anclajes Sika Dur 31 x 1kg</b>
                     <b>S/ 75.00 C/U</b>
-                    <a href="#">COMPRAR</a>
+                    <p class="title">SIKA Epóxico para Anclajes Sika Dur 31 x 1kg</p>
+                    <a href="" data-id="20" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="SIKA">
-                    <img src="Cementos/SIKA/Expansor-Para-Concreto-y-Mortero-Sika-Intraplast-x-850gr-18.01-c.u.jpg" alt="">
-                    <p>SIKA Expansor Para Concreto y Mortero Sika Intraplast x 850gr</p>
+                    <div>
+                    <img src="Cementos/SIKA/Expansor-Para-Concreto-y-Mortero-Sika-Intraplast-x-850gr-18.01-c.u.jpg" alt=""></a>
+                    <p>S/.<span>18.01</span></p>
+                    </div>
+                    <b>SIKA Expansor Para Concreto y Mortero Sika Intraplast x 850gr</b>
                     <b>S/ 18.01 C/U</b>
-                    <a href="#">COMPRAR</a>
+                    <p class="title">SIKA Epóxico para Anclajes Sika Dur 31 x 1kg</p>
+                    <a href="" data-id="21" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="SIKA">
-                    <img src="Cementos/SIKA/Mortero-Autonivelante-Sika-Grout-212-x-30kg-143.5-c.u.jpg" alt="">
-                    <p>SIKA Mortero Autonivelante Sika Grout 212 x 30kg</p>
+                    <div>
+                    <img src="Cementos/SIKA/Mortero-Autonivelante-Sika-Grout-212-x-30kg-143.5-c.u.jpg" alt=""></a>
+                    <p>S/.<span>143.50</span></p>
+                    </div>
+                    <b>SIKA Mortero Autonivelante Sika Grout 212 x 30kg</b>
                     <b>S/ 143.5 C/U</b>
-                    <a href="#">COMPRAR</a>
+                    <p class="title">SIKA Mortero Autonivelante Sika Grout 212 x 30kg</p>
+                    <a href="" data-id="22" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="SIKA">
-                    <img src="Cementos/SIKA/Mortero-de-reparación-reforzado-con-fibras-Sika-Rep-Home-5kg-17-c.u.jpg" alt="">
-                    <p>SIKA Mortero de reparación reforzado con fibras Sika Rep Home 5kg</p>
+                    <div>
+                    <img src="Cementos/SIKA/Mortero-de-reparación-reforzado-con-fibras-Sika-Rep-Home-5kg-17-c.u.jpg" alt=""></a>
+                    <p>S/.<span>17.00</span></p>
+                    </div>
+                    <b>SIKA Mortero de reparación reforzado con fibras Sika Rep Home 5kg</b>
                     <b>S/ 17.00 C/U</b>
-                    <a href="#">COMPRAR</a>
+                    <p class="title">SIKA Mortero de reparación reforzado con fibras Sika Rep Home 5kg</p>
+                    <a href="" data-id="23" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="SOL">
-                    <img src="Cementos/SOL/Cemento-Sol-T1-27-soles.jpg" alt="">
-                    <p>SOL Cemento Sol T1</p>
+                    <div>
+                    <img src="Cementos/SOL/Cemento-Sol-T1-27-soles.jpg" alt=""></a>
+                    <p>S/.<span>27.00</span></p>
+                    </div>
+                    <b>SOL Cemento Sol T1</b>
                     <b>S/ 27.00 C/U</b>
-                    <a href="#">COMPRAR</a>
+                    <p class="title">SOL Cemento Sol T1</p>
+                    <a href="" data-id="24" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="ANDINO">
-                    <img src="Cementos/ANDINO/Cemento-Andino-Ultra-HS-28.6.jpg" alt="">
-                    <p>ANDINO Cemento Andino Ultra HS</p>
+                    <div>
+                    <img src="Cementos/ANDINO/Cemento-Andino-Ultra-HS-28.6.jpg" alt=""></a>
+                    <p>S/.<span>28.60</span></p>
+                    </div>
+                    <b>ANDINO Cemento Andino Ultra HS</b>
                     <b>S/ 28.60 C/U</b> 
-                    <a href="#">COMPRAR</a>
+                    <p class="title">ANDINO Cemento Andino Ultra HS</p>
+                    <a href="" data-id="25" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+            </div>
             </section>
+        </section>
+        <script>
+            function showCart(x){
+                document.getElementById("products-id").style.display = "block";
+            }
+            function closeBtn(){
+                 document.getElementById("products-id").style.display = "none";
+            }
+        </script>
         </div>  
     </div>
+    <script src="./custom.js"></script>
 </body>
 </html>

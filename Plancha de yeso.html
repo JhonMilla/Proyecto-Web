@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="estilos.css"/>
     <title>Plancha de yeso</title>
     <script src="js/jquery-3.2.1.js"></script>
-    <script src="script.js"></script>>
+    <script src="script.js"></script>
 </head>
 <body>
     <header class="Cabecera">
@@ -17,6 +17,21 @@
         <ul class="Menú">
             <li><a href= "index.html">Inicio</a></li>
             <li><a href= "Plancha de yeso.html" >Plancha de yeso</a></li>
+            <li>
+                <div class="header-section container">
+                    <div>
+                        <img onmouseover="showCart(this)" class="cart" src="./img/cart.png" alt="">
+                        <p class="count-product">0</p>
+                    </div>
+                    <div class="cart-products" id="products-id">
+                        <p class="close-btn" onclick="closeBtn()">X</p>
+                        <h3>Mi carrito</h3>
+                        <div class="card-items">
+                        </div>
+                        <h2>Total: S/.<strong class="price-total">0</strong> </h2>
+                    </div>
+                </div>
+            </li>
         </ul>
     </nav>
     <div class="clearfix"></div> 
@@ -29,33 +44,70 @@
                     <li><a href="#" class="marca_item" marca="VOLCAN"><img src="Portada/VOLCAN.jpg"></a></li>
                 </ul>
             </nav>
-            <section class="producto-lista">
+            <section class="container">
+                <section class="producto-lista">
+                <div class="products">
+                    <div class="carts">
                 <div class="producto-item" marca="VOLCAN">
-                    <img src="Plancha de yeso/VOLCAN/Placa de Drywall Volcanita RF 1.2 1.22mx2.44m(42.00).jpg" alt="">
-                    <p>VOLCAN Placa de Drywall Volcanita RF 1/2" 1.22mx2.44m</p>
+                    <div>
+                    <img src="Plancha de yeso/VOLCAN/Placa de Drywall Volcanita RF 1.2 1.22mx2.44m(42.00).jpg" alt=""></a>
+                    <p>S/.<span>42.00</span></p>
+                    </div>
+                    <b>VOLCAN Placa de Drywall Volcanita RF 1/2" 1.22mx2.44m</b>
                     <b>S/ 42.00 C/U</b>
-                    <a href="#">COMPRAR</a>
+                    <p class="title">VOLCAN Placa de Drywall Volcanita RF 1/2" 1.22mx2.44m</p>
+                    <a href="" data-id="1" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>   
+                <div class="carts">
                 <div class="producto-item" marca="VOLCAN">
-                    <img src="Plancha de yeso/VOLCAN/Placa de Drywall Volcanita Rh 1.2 1.22mx2.44m(38.50).jpg" alt="">
-                    <p>VOLCAN Placa de Drywall Volcanita Rh 1/2" 1.22mx2.44m</p>
+                    <div>
+                    <img src="Plancha de yeso/VOLCAN/Placa de Drywall Volcanita Rh 1.2 1.22mx2.44m(38.50).jpg" alt=""></a>
+                    <p>S/.<span>38.50</span></p>
+                    </div>
+                    <b>VOLCAN Placa de Drywall Volcanita Rh 1/2" 1.22mx2.44m</b>
                     <b>S/ 38.50 C/U</b>
-                    <a href="#">COMPRAR</a>
+                    <p class="title">VOLCAN Placa de Drywall Volcanita Rh 1/2" 1.22mx2.44m</p>
+                    <a href="" data-id="2" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="VOLCAN">
-                    <img src="Plancha de yeso/VOLCAN/Placa de Drywall Volcanita ST 1.2 1.22mx2.44m(26.50).jpg" alt="">
-                    <p>VOLCAN Placa de Drywall Volcanita ST 1/2" 1.22mx2.44m</p>
+                    <div>
+                    <img src="Plancha de yeso/VOLCAN/Placa de Drywall Volcanita ST 1.2 1.22mx2.44m(26.50).jpg" alt=""></a>
+                    <p>S/.<span>26.50</span></p>
+                    </div>
+                    <b>VOLCAN Placa de Drywall Volcanita ST 1/2" 1.22mx2.44m</b>
                     <b>S/ 26.50 C/U</b>
-                    <a href="#">COMPRAR</a>
+                    <p class="title">VOLCAN Placa de Drywall Volcanita ST 1/2" 1.22mx2.44m</p>
+                    <a href="" data-id="3" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="VOLCAN">
-                    <img src="Plancha de yeso/VOLCAN/Placa de Drywall Volcanita St 3.8 1.22mx2.44m(25.70).jpg" alt="">
-                    <p>VOLCAN Placa de Drywall Volcanita St 3/8" 1.22mx2.44m</p>
+                    <div>
+                    <img src="Plancha de yeso/VOLCAN/Placa de Drywall Volcanita St 3.8 1.22mx2.44m(25.70).jpg" alt=""></a>
+                    <p>S/.<span>25.70</span></p>
+                    </div>
+                    <b>VOLCAN Placa de Drywall Volcanita St 3/8" 1.22mx2.44m</b>
                     <b>S/ 25.70 C/U</b>
-                    <a href="#">COMPRAR</a>
+                    <p class="title">VOLCAN Placa de Drywall Volcanita St 3/8" 1.22mx2.44m</p>
+                    <a href="" data-id="4" class="btn-add-cart">Agregar al carrito</a>
                 </div>
-            </section>
-        </div>  
-    </div>
+                </div>
+        </div>
+        </section>
+    </section>
+    <script>
+        function showCart(x){
+            document.getElementById("products-id").style.display = "block";
+        }
+        function closeBtn(){
+             document.getElementById("products-id").style.display = "none";
+        }
+    </script>
+    </div>  
+</div>
+<script src="./custom.js"></script>
 </body>
 </html>

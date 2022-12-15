@@ -17,6 +17,21 @@
         <ul class="Menú">
             <li><a href= "index.html">Inicio</a></li>
             <li><a href= "Clavos.html" >Clavos</a></li>
+            <li>
+                <div class="header-section container">
+                    <div>
+                        <img onmouseover="showCart(this)" class="cart" src="./img/cart.png" alt="">
+                        <p class="count-product">0</p>
+                    </div>
+                    <div class="cart-products" id="products-id">
+                        <p class="close-btn" onclick="closeBtn()">X</p>
+                        <h3>Mi carrito</h3>
+                        <div class="card-items">
+                        </div>
+                        <h2>Total: S/.<strong class="price-total">0</strong> </h2>
+                    </div>
+                </div>
+            </li>
         </ul>
     </nav>
     <div class="clearfix"></div> 
@@ -33,159 +48,321 @@
                     <li><a href="#" class="marca_item" marca="UBERMANN"><img src="Portada/UBERMANN.png"></a></li>
                 </ul>
             </nav>
+            <section class="container">
             <section class="producto-lista">
+            <div class="products">
+                <div class="carts">
                 <div class="producto-item" marca="MAMUT">
+                    <div>
                     <img src="Clavos/MAMUT/Clavo ac estria 3.5x55mm 10u 08CCEV-W-8.90.jpg" alt="">
-                    <p>MAMUT Clavo ac estria 3.5x55mm 10u 08CCEV-W</p>
+                    <p>S/.<span>8.90 </span></p>
+                    </div>
+                    <b>MAMUT Clavo ac estria 3.5x55mm 10u 08CCEV-W</b>
                     <b>S/ 8.90 C/U</b>
-                    <a href="#">COMPRAR</a>
+                    <p class="title">MAMUT Clavo ac estria 3.5x55mm 10u 08CCEV-W</p>
+                    <a href="" data-id="1" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="MAMUT">
+                    <div>
                     <img src="Clavos/MAMUT/Clavo acero 2.5x30 mm 250 und-49.90.jpg" alt="">
-                    <p>MAMUT Clavo acero 2.5x30 mm 250 und.</p>
+                    <p>S/.<span>49.90 </span></p>
+                    </div>
+                    <b>MAMUT Clavo acero 2.5x30 mm 250 und.</b>
                     <b>S/ 49.90 C/U</b>
-                    <a href="#">COMPRAR</a>
+                    <p class="title">MAMUT Clavo acero 2.5x30 mm 250 und.</p>
+                    <a href="" data-id="2" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="MAMUT">
+                    <div>
                     <img src="Clavos/MAMUT/Clavo disparo 3.7x25 mm 100 und-18.90.jpg" alt="">
-                    <p>MAMUT Clavo disparo 3.7x25 mm 100 und.</p>
+                    <p>S/.<span>18.90 </span></p>
+                    </div>
+                    <b>MAMUT Clavo disparo 3.7x25 mm 100 und.</b>
                     <b>S/ 18.90 C/U</b>
-                    <a href="#">COMPRAR</a>
+                    <p class="title">MAMUT Clavo disparo 3.7x25 mm 100 und.</p>
+                    <a href="" data-id="3" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="MAMUT">
+                    <div>
                     <img src="Clavos/MAMUT/Clavo disparo 3.7x38 mm 100 und-34.02.jpg" alt="">
-                    <p>MAMUT Clavo disparo 3.7x38 mm 100 und.</p>
+                    <p>S/.<span>34.02 </span></p>
+                    </div>
+                    <b>MAMUT Clavo disparo 3.7x38 mm 100 und.</b>
                     <b>S/ 34.02 C/U</b>
-                    <a href="#">COMPRAR</a>
+                    <p class="title">MAMUT Clavo disparo 3.7x38 mm 100 und.</p>
+                    <a href="" data-id="4" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="MAMUT">
+                    <div>
                     <img src="Clavos/MAMUT/Clavos albañil 3' 1 kg-7.90.jpg" alt="">
-                    <p>MAMUT Clavos albañil 3' 1 kg</p>
+                    <p>S/.<span>7.90 </span></p>
+                    </div>
+                    <b>MAMUT Clavos albañil 3' 1 kg</b>
                     <b>S/ 7.90 C/U</b>
-                    <a href="#">COMPRAR</a>
+                    <p class="title">MAMUT Clavos albañil 3' 1 kg</p>
+                    <a href="" data-id="5" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="MAMUT">
+                    <div>
                     <img src="Clavos/MAMUT/Kit clavos acero aleado 116 und-29.90.jpg" alt="">
-                    <p>MAMUT Kit clavos acero aleado 116 und.</p>
+                    <p>S/.<span>29.90 </span></p>
+                    </div>
+                    <b>MAMUT Kit clavos acero aleado 116 und.</b>
                     <b>S/ 29.90 C/U</b>
-                    <a href="#">COMPRAR</a>
+                    <p class="title">MAMUT Kit clavos acero aleado 116 und.</p>
+                    <a href="" data-id="6" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="PRODAC">
+                    <div>
                     <img src="Clavos/PRODAC/Clavo 2 1.2' 500g para Calamina-6.90.jpg" alt="">
-                    <p>PRODAC Clavo 2 1/2" 500g para Calamina</p>
+                    <p>S/.<span>6.90 </span></p>
+                    </div>
+                    <b>PRODAC Clavo 2 1/2" 500g para Calamina</b>
                     <b>S/ 6.90 C/U</b>
-                    <a href="#">COMPRAR</a>
+                    <p class="title">PRODAC Clavo 2 1/2" 500g para Calamina</p>
+                    <a href="" data-id="7" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="PRODAC">
+                    <div>
                     <img src="Clavos/PRODAC/Clavo albañil con cabeza 3' 30 kg-169.90.jpg" alt="">
-                    <p>PRODAC Clavo albañil con cabeza 3" 30 kg</p>
+                    <p>S/.<span>169.90 </span></p>
+                    </div>
+                    <b>PRODAC Clavo albañil con cabeza 3" 30 kg</b>
                     <b>S/ 169.90 C/U</b>
-                    <a href="#">COMPRAR</a>
+                    <p class="title">PRODAC Clavo albañil con cabeza 3" 30 kg</p>
+                    <a href="" data-id="8" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="PRODAC">
+                    <div>
                     <img src="Clavos/PRODAC/Clavo Carpintero C.C 3.4'-3.90.jpg" alt="">
-                    <p>PRODAC Clavo Carpintero C/C 3/4"</p>
+                    <p>S/.<span>3.90 </span></p>
+                    </div>
+                    <b>PRODAC Clavo Carpintero C/C 3/4"</b>
                     <b>S/ 3.90 C/U</b>
-                    <a href="#">COMPRAR</a>
+                    <p class="title">PRODAC Clavo Carpintero C/C 3/4"</p>
+                    <a href="" data-id="9" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="PRODAC">
+                    <div>
                     <img src="Clavos/PRODAC/Clavo Carpintero con Cabeza 2 1.2' x12 1.2kg-9.90.jpg" alt="">
-                    <p>PRODAC Clavo Carpintero con Cabeza 2 1/2" x12 1.2kg</p>
+                    <p>S/.<span>9.90 </span></p>
+                    </div>
+                    <b>PRODAC Clavo Carpintero con Cabeza 2 1/2" x12 1.2kg</b>
                     <b>S/ 9.90 C/U</b>
-                    <a href="#">COMPRAR</a>
+                    <p class="title">PRODAC Clavo Carpintero con Cabeza 2 1/2" x12 1.2kg</p>
+                    <a href="" data-id="10" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="PRODAC">
+                    <div>
                     <img src="Clavos/PRODAC/Clavo Carpintero sin Cabeza 3.4'x19 100gr-3.90.jpg" alt="">
-                    <p>PRODAC Clavo Carpintero sin Cabeza 3/4"x19 100gr</p>
+                    <p>S/.<span>3.90 </span></p>
+                    </div>
+                    <b>PRODAC Clavo Carpintero sin Cabeza 3/4"x19 100gr</b>
                     <b>S/ 3.90 C/U</b>
-                    <a href="#">COMPRAR</a>
+                    <p class="title">PRODAC Clavo Carpintero sin Cabeza 3/4"x19 100gr</p>
+                    <a href="" data-id="11" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="PRODAC">
+                    <div>
                     <img src="Clavos/PRODAC/Clavos acero con cabeza 1 1.2' 250 gr-5.90.jpg" alt="">
-                    <p>PRODAC Clavos acero con cabeza 1 1/2" 250 gr</p>
+                    <p>S/.<span>5.90 </span></p>
+                    </div>
+                    <b>PRODAC Clavos acero con cabeza 1 1/2" 250 gr</b>
                     <b>S/ 5.90 C/U</b>
-                    <a href="#">COMPRAR</a>
+                    <p class="title">PRODAC Clavos acero con cabeza 1 1/2" 250 gr</p>
+                    <a href="" data-id="12" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="PRODAC">
+                    <div>
                     <img src="Clavos/PRODAC/Clavos acero sin cabeza 1 1.2' 250 gr-5.90.jpg" alt="">
-                    <p>PRODAC Clavos acero con cabeza 1 1/2" 250 gr</p>
+                    <p>S/.<span>5.90 </span></p>
+                    </div>
+                    <b>PRODAC Clavos acero con cabeza 1 1/2" 250 gr</b>
                     <b>S/ 5.90 C/U</b>
-                    <a href="#">COMPRAR</a>
+                    <p class="title">PRODAC Clavos acero con cabeza 1 1/2" 250 gr</p>
+                    <a href="" data-id="13" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="PRODAC">
+                    <div>
                     <img src="Clavos/PRODAC/Clavos albañil 4' 1 kg-7.90.jpg" alt="">
-                    <p>PRODAC Clavos albañil 4" 1 kg</p>
+                    <p>S/.<span>7.90 </span></p>
+                    </div>
+                    <b>PRODAC Clavos albañil 4" 1 kg</b>
                     <b>S/ 7.90 C/U</b>
-                    <a href="#">COMPRAR</a>
+                    <p class="title">PRODAC Clavos albañil 4" 1 kg</p>
+                    <a href="" data-id="14" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="FIXSER">
+                    <div>
                     <img src="Clavos/FIXSER/Alcayata 3.0x25 mm 4 und-4.90.jpg" alt="">
-                    <p>FIXSER Alcayata 3.0x25 mm 4 und.</p>
+                    <p>S/.<span>4.90 </span></p>
+                    </div>
+                    <b>FIXSER Alcayata 3.0x25 mm 4 und.</b>
                     <b>S/ 4.90 C/U</b>
-                    <a href="#">COMPRAR</a>
+                    <p class="title">FIXSER Alcayata 3.0x25 mm 4 und.</p>
+                    <a href="" data-id="14" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="FIXSER">
+                    <div>
                     <img src="Clavos/FIXSER/Clavo calaminero 2 3.4' 50 und-39.90.jpg" alt="">
-                    <p>FIXSER Clavo calaminero 2 3/4" 50 und.</p>
+                    <p>S/.<span>39.90 </span></p>
+                    </div>
+                    <b>FIXSER Clavo calaminero 2 3/4" 50 und.</b>
                     <b>S/ 39.90 C/U</b>
-                    <a href="#">COMPRAR</a>
+                    <p class="title">FIXSER Clavo calaminero 2 3/4" 50 und.</p>
+                    <a href="" data-id="15" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="FIXSER">
+                    <div>
                     <img src="Clavos/FIXSER/Pack x50 Clavos 2.5x50mm-19.90.jpg" alt="">
-                    <p>FIXSER Pack x50 Clavos 2.5x50mm.</p>
+                    <p>S/.<span>19.90 </span></p>
+                    </div>
+                    <b>FIXSER Pack x50 Clavos 2.5x50mm.</b>
                     <b>S/ 19.90 C/U</b>
-                    <a href="#">COMPRAR</a>
+                    <p class="title">FIXSER Pack x50 Clavos 2.5x50mm.</p>
+                    <a href="" data-id="16" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="FIXSER">
+                    <div>
                     <img src="Clavos/FIXSER/Pack x50 Clavos Estriado 2.7x30mm-12.90.jpg" alt="">
-                    <p>FIXSER Pack x50 Clavos Estriado 2.7x30mm</p>
+                    <p>S/.<span>12.90 </span></p>
+                    </div>
+                    <b>FIXSER Pack x50 Clavos Estriado 2.7x30mm</b>
                     <b>S/ 12.90 C/U</b>
-                    <a href="#">COMPRAR</a>
+                    <p class="title">FIXSER Pack x50 Clavos Estriado 2.7x30mm</p>
+                    <a href="" data-id="17" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="FIXSER">
+                    <div>
                     <img src="Clavos/FIXSER/Pack x50 Clavos Estriado 2.7x40mm-14.90.jpg" alt="">
-                    <p>FIXSER Pack x50 Clavos Estriado 2.7x40mm</p>
+                    <p>S/.<span>14.90 </span></p>
+                    </div>
+                    <b>FIXSER Pack x50 Clavos Estriado 2.7x40mm</b>
                     <b>S/ 14.90 C/U</b>
-                    <a href="#">COMPRAR</a>
+                    <p class="title">FIXSER Pack x50 Clavos Estriado 2.7x40mm</p>
+                    <a href="" data-id="18" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="UBERMANN">
+                    <div>
                     <img src="Clavos/UBERMANN/Clavo 1.2x16mm 1000 und-15.90.jpg" alt="">
-                    <p>UBERMANN Clavo 1.2x16mm 1000 und.</p>
+                    <p>S/.<span>15.90 </span></p>
+                    </div>
+                    <b>UBERMANN Clavo 1.2x16mm 1000 und.</b>
                     <b>S/ 15.90 C/U</b> 
-                    <a href="#">COMPRAR</a>
+                    <p class="title">UBERMANN Clavo 1.2x16mm 1000 und.</p>
+                    <a href="" data-id="19" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="UBERMANN">
+                    <div>
                     <img src="Clavos/UBERMANN/Clavos 25mm 1000 und-13.90.jpg" alt="">
-                    <p>UBERMANN Clavos 25mm 1000 und.</p>
+                    <p>S/.<span>13.90 </span></p>
+                    </div>
+                    <b>UBERMANN Clavos 25mm 1000 und.</b>
                     <b>S/ 13.90 C/U</b> 
-                    <a href="#">COMPRAR</a>
+                    <p class="title">UBERMANN Clavos 25mm 1000 und.</p>
+                    <a href="" data-id="20" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="UBERMANN">
+                    <div>
                     <img src="Clavos/UBERMANN/Clavos 30mm 1000 und-14.90.jpg" alt="">
-                    <p>UBERMANN Clavos 30mm 1000 und.</p>
+                    <p>S/.<span>14.90 </span></p>
+                    </div>
+                    <b>UBERMANN Clavos 30mm 1000 und.</b>
                     <b>S/ 14.90 C/U</b> 
-                    <a href="#">COMPRAR</a>
+                    <p class="title">UBERMANN Clavos 30mm 1000 und.</p>
+                    <a href="" data-id="21" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="UBERMANN">
+                    <div>
                     <img src="Clavos/UBERMANN/Clavos 35mm 1000 und-16.50.jpg" alt="">
-                    <p>UBERMANN Clavos 35mm 1000 und.</p>
+                    <p>S/.<span>16.50 </span></p>
+                    </div>
+                    <b>UBERMANN Clavos 35mm 1000 und.</b>
                     <b>S/ 16.50 C/U</b> 
-                    <a href="#">COMPRAR</a>
+                    <p class="title">UBERMANN Clavos 35mm 1000 und.</p>
+                    <a href="" data-id="22" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="UBERMANN">
+                    <div>
                     <img src="Clavos/UBERMANN/Clavos 45mm 1000 und-16.90.jpg" alt="">
-                    <p>UBERMANN Clavos 45mm 1000 und.</p>
+                    <p>S/.<span>16.90 </span></p>
+                    </div>
+                    <b>UBERMANN Clavos 45mm 1000 und.</b>
                     <b>S/ 16.90 C/U</b> 
-                    <a href="#">COMPRAR</a>
+                    <p class="title">UBERMANN Clavos 45mm 1000 und.</p>
+                    <a href="" data-id="23" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="UBERMANN">
+                    <div>
                     <img src="Clavos/UBERMANN/Clavos 50mm 1000 und-17.90.jpg" alt="">
-                    <p>UBERMANN Clavos 50mm 1000 und.</p>
+                    <p>S/.<span>17.90 </span></p>
+                    </div>
+                    <b>UBERMANN Clavos 50mm 1000 und.</b>
                     <b>S/ 17.90 C/U</b> 
-                    <a href="#">COMPRAR</a>
+                    <p class="title">UBERMANN Clavos 50mm 1000 und.</p>
+                    <a href="" data-id="24" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+            </div>
             </section>
+        </section>
+        <script>
+            function showCart(x){
+                document.getElementById("products-id").style.display = "block";
+            }
+            function closeBtn(){
+                 document.getElementById("products-id").style.display = "none";
+            }
+        </script>
         </div>  
     </div>
+    <script src="./custom.js"></script>
 </body>
 </html>

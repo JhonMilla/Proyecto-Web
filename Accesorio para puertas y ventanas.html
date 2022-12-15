@@ -8,6 +8,9 @@
     <title>Accesorio para puertas y ventanas</title>
     <script src="js/jquery-3.2.1.js"></script>
     <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
 </head>
 <body>
     <header class="Cabecera">
@@ -17,6 +20,22 @@
         <ul class="Menú">
             <li><a href= "index.html">Inicio</a></li>
             <li><a href= "Accesorio para puertas y ventanas.html" >Accesorio para puertas y ventanas</a></li>
+            <li>
+                <div class="header-section container">
+                    <div>
+                        <img onmouseover="showCart(this)" class="cart" src="./img/cart.png" alt="">
+                        <p class="count-product">0</p>
+                    </div>
+                    <div class="cart-products" id="products-id">
+                        <p class="close-btn" onclick="closeBtn()">X</p>
+                        <h3>Mi carrito</h3>
+                        <div class="card-items">
+                        </div>
+                        <h2>Total: S/.<strong class="price-total">0</strong> </h2>
+                        <a href="pago.php">Comprar</a>
+                    </div>
+                </div>
+            </li>
         </ul>
     </nav>
     <div class="clearfix"></div> 
@@ -34,12 +53,20 @@
                     <li><a href="#" class="marca_item" marca="YALE"><img src="Portada/YALE.jpg"></a></li>
                 </ul>
             </nav>
+            <section class="container">
             <section class="producto-lista">
+            <div class="products">
+                <div class="carts">
                 <div class="producto-item" marca="BISA">
+                    <div>
                     <img src="Accesorios para Puertas y Ventanas/BISA/Bisagra 2.5 x 2.5 Aluminio x 2 Und(9.90).jpg" alt="">
-                    <p>BISA Bisagra 2.5" x 2.5" Aluminio x 2 Und.</p>
+                    <p>S/ 9.90 C/U</p>
+                    </div>
+                    <b>BISA Bisagra 2.5" x 2.5" Aluminio x 2 Und.</b>
                     <b>S/ 9.90 C/U</b>
-                    <a href="#">COMPRAR</a>
+                    <p class="title">BISA Bisagra 2.5" x 2.5" Aluminio x 2 Und.</p>
+                    <a href="" data-id="1" class="btn-add-cart">Agregar al carrito</a><br>
+                </div>    
                 </div>
                 <div class="producto-item" marca="BISA">
                     <img src="Accesorios para Puertas y Ventanas/BISA/Bisagra 3 x 3 Acero Inoxidable(35.90).jpg" alt="">
@@ -185,8 +212,19 @@
                     <b>S/ 74.90 C/U</b>
                     <a href="#">COMPRAR</a>
                 </div>
+            </div>
             </section>
+        </section>
+        <script>
+            function showCart(x){
+                document.getElementById("products-id").style.display = "block";
+            }
+            function closeBtn(){
+                 document.getElementById("products-id").style.display = "none";
+            }
+        </script>
         </div>  
     </div>
+    <script src="./custom.js"></script>
 </body>
 </html>

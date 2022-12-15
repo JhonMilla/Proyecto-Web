@@ -17,6 +17,21 @@
         <ul class="Menú">
             <li><a href= "index.html">Inicio</a></li>
             <li><a href= "Escalera.html" >Escaleras</a></li>
+            <li>
+                <div class="header-section container">
+                    <div>
+                        <img onmouseover="showCart(this)" class="cart" src="./img/cart.png" alt="">
+                        <p class="count-product">0</p>
+                    </div>
+                    <div class="cart-products" id="products-id">
+                        <p class="close-btn" onclick="closeBtn()">X</p>
+                        <h3>Mi carrito</h3>
+                        <div class="card-items">
+                        </div>
+                        <h2>Total: S/.<strong class="price-total">0</strong> </h2>
+                    </div>
+                </div>
+            </li>
         </ul>
     </nav>
     <div class="clearfix"></div> 
@@ -34,159 +49,322 @@
                     <li><a href="#" class="marca_item" marca="UBERMANN"><img src="Portada/UBERMANN.png"></a></li>
                 </ul>
             </nav>
+            <section class="container">
             <section class="producto-lista">
+            <div class="products">
+                <div class="carts">
                 <div class="producto-item" marca="ALADINO">
-                    <a href="Escalera Telescópica de Aluminio 24 pasos.html"><img src="Escalera/ALADINO/Escalera Telescópica de Aluminio 24 pasos - 1379.9.jpg" alt=""></a>
-                    <p>ALADINO Escalera Telescópica de Aluminio 24 pasos</p>
+                    <div>
+                    <img src="Escalera/ALADINO/Escalera Telescópica de Aluminio 24 pasos - 1379.9.jpg" alt=""></a>
+                    <p>S/.<span>1379.90</span></p>
+                    </div>
+                    <b>ALADINO Escalera Telescópica de Aluminio 24 pasos</b>
                     <b>S/ 1379.90 C/U</b> 
-                    <a href="#">COMPRAR</a>
+                    <p class="title">ALADINO Escalera Telescópica de Aluminio 24 pasos</p>
+                    <a href="" data-id="1" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="ALADINO">
-                    <a href="Escalera Tijera Aluminio Profesional Doble Ascenso 3 Pasos.html"><img src="Escalera/ALADINO/Escalera Tijera Aluminio Profesional Doble Ascenso 3 Pasos - 330.9.jpg" alt=""></a>
-                    <p>ALADINO Escalera Tijera Aluminio Profesional Doble Ascenso 3 Pasos</p>
+                    <div>
+                    <img src="Escalera/ALADINO/Escalera Tijera Aluminio Profesional Doble Ascenso 3 Pasos - 330.9.jpg" alt=""></a>
+                    <p>S/.<span>330.90</span></p>
+                    </div>
+                    <b>ALADINO Escalera Tijera Aluminio Profesional Doble Ascenso 3 Pasos</b>
                     <b>S/ 330.90 C/U</b> 
-                    <a href="#">COMPRAR</a>
+                    <p class="title">ALADINO Escalera Tijera Aluminio Profesional Doble Ascenso 3 Pasos</p>
+                    <a href="" data-id="2" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="ALADINO">
-                    <a href="Escalera Tijera Aluminio Profesional Doble Ascenso 4 Pasos.html"><img src="Escalera/ALADINO/Escalera Tijera Aluminio Profesional Doble Ascenso 4 Pasos - 409.9.jpg" alt=""></a>
-                    <p>ALADINO Escalera Tijera Aluminio Profesional Doble Ascenso 4 Pasos</p>
+                    <div>
+                    <img src="Escalera/ALADINO/Escalera Tijera Aluminio Profesional Doble Ascenso 4 Pasos - 409.9.jpg" alt=""></a>
+                    <p>S/.<span>409.90</span></p>
+                    </div>
+                    <b>ALADINO Escalera Tijera Aluminio Profesional Doble Ascenso 4 Pasos</b>
                     <b>S/ 409.90 C/U</b> 
-                    <a href="#">COMPRAR</a>
+                    <p class="title">ALADINO Escalera Tijera Aluminio Profesional Doble Ascenso 4 Pasos</p>
+                    <a href="" data-id="3" class="btn-add-cart">Agregar al carrito</a>
                 </div>
-                <div class="producto-item" marca="ALADINO">
-                    <a href="Escalera Tijera Aluminio Domestica Simple Asenso 2 Pasos.html"><img src="Escalera/ALADINO/Escalera Tijera Aluminio Domestica Simple Asenso 2 Pasos-223.90.jpg" alt=""></a>
-                    <p>ALADINO Escalera Tijera Aluminio Domestica Simple Asenso 2 Pasos</p>
-                    <b>S/ 223.90 C/U</b> 
-                    <a href="#">COMPRAR</a>
                 </div>
+                <div class="carts">
                 <div class="producto-item" marca="ALADINO">
-                    <a href="Escalera Tijera Aluminio Profesional Simple Ascenso 5 Pasos.html"><img src="Escalera/ALADINO/Escalera Tijera Aluminio Profesional Simple Ascenso 5 Pasos-382.90.jpg" alt=""></a>
-                    <p>ALADINO Escalera Tijera Aluminio Profesional Simple Ascenso 5 Pasos</p>
+                    <div>
+                    <img src="Escalera/ALADINO/Escalera Tijera Aluminio Domestica Simple Asenso 2 Pasos-223.90.jpg" alt=""></a>
+                    <p>S/.<span>223.90</span></p>
+                    </div>
+                    <b>ALADINO Escalera Tijera Aluminio Domestica Simple Asenso 2 Pasos</b>
+                    <b>S/ 223.90 C/U</b>
+                    <p class="title">ALADINO Escalera Tijera Aluminio Domestica Simple Asenso 2 Pasos</p>
+                    <a href="" data-id="4" class="btn-add-cart">Agregar al carrito</a>
+                </div>
+                </div>
+                <div class="carts">
+                <div class="producto-item" marca="ALADINO">
+                    <div>
+                    <img src="Escalera/ALADINO/Escalera Tijera Aluminio Profesional Simple Ascenso 5 Pasos-382.90.jpg" alt=""></a>
+                    <p>S/.<span>382.90</span></p>
+                    </div>
+                    <b>ALADINO Escalera Tijera Aluminio Profesional Simple Ascenso 5 Pasos</b>
                     <b>S/ 382.90 C/U</b> 
-                    <a href="#">COMPRAR</a>
+                    <p class="title">ALADINO Escalera Tijera Aluminio Profesional Simple Ascenso 5 Pasos</p>
+                    <a href="" data-id="5" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="ALADINO">
-                    <a href="Escalera Tijera Aluminio Profesional Simple Ascenso 4 Pasos.html"><img src="Escalera/ALADINO/Escalera Tijera Aluminio Profesional Simple Ascenso 4 Pasos-330.90.jpg" alt=""></a>
-                    <p>ALADINO Escalera Tijera Aluminio Profesional Simple Ascenso 4 Pasos</p>
+                    <div>
+                    <img src="Escalera/ALADINO/Escalera Tijera Aluminio Profesional Simple Ascenso 4 Pasos-330.90.jpg" alt=""></a>
+                    <p>S/.<span>330.90</span></p>
+                    </div>
+                    <b>ALADINO Escalera Tijera Aluminio Profesional Simple Ascenso 4 Pasos</b>
                     <b>S/ 330.90 C/U</b> 
-                    <a href="#">COMPRAR</a>
+                    <p class="title">ALADINO Escalera Tijera Aluminio Profesional Simple Ascenso 4 Pasos</p>
+                    <a href="" data-id="6" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="ALADINO">
-                    <a href="Escalera Telescópica Aluminio Industrial 20 Pasos.html"><img src="Escalera/ALADINO/Escalera Telescópica Aluminio Industrial 20 Pasos-1221.90.jpg" alt=""></a>
-                    <p>ALADINO Escalera Telescópica Aluminio Industrial 20 Pasos</p>
+                    <div>
+                    <img src="Escalera/ALADINO/Escalera Telescópica Aluminio Industrial 20 Pasos-1221.90.jpg" alt=""></a>
+                    <p>S/.<span>1221.90</span></p>
+                    </div>
+                    <b>ALADINO Escalera Telescópica Aluminio Industrial 20 Pasos</b>
                     <b>S/ 1221.90 C/U</b> 
-                    <a href="#">COMPRAR</a>
+                    <p class="title">ALADINO Escalera Telescópica Aluminio Industrial 20 Pasos</p>
+                    <a href="" data-id="7" class="btn-add-cart">Agregar al carrito</a>
                 </div>
-                <div class="producto-item" marca="BRONCO AMERICA LADDER">
-                    <a href="Escalera Tijera Fibra de Vidrio 4 Pasos Doble.html"><img src="Escalera/BRONCO AMERICA LADDER/Escalera Tijera Fibra de Vidrio 4 Pasos Doble - 605.9.jpg" alt=""></a>
-                    <p>BRONCO AMERICA LADDER Escalera Tijera Fibra de Vidrio 4 Pasos Doble</p>
-                    <b>S/ 605.90 C/U</b> 
-                    <a href="#">COMPRAR</a>
                 </div>
+                <div class="carts">
                 <div class="producto-item" marca="BRONCO AMERICA LADDER">
-                    <a href="Escalera Tijera Fibra de Vidrio 5 Pasos Doble.html"><img src="Escalera/BRONCO AMERICA LADDER/Escalera Tijera Fibra de Vidrio 5 Pasos Doble - 759.9.jpg" alt=""></a>
-                    <p>BRONCO AMERICA LADDER Escalera Tijera Fibra de Vidrio 5 Pasos Doble</p>
+                    <div>
+                    <img src="Escalera/BRONCO AMERICA LADDER/Escalera Tijera Fibra de Vidrio 4 Pasos Doble - 605.9.jpg" alt=""></a>
+                    <p>S/.<span>605.90</span></p>
+                    </div>
+                    <b>BRONCO AMERICA LADDER Escalera Tijera Fibra de Vidrio 4 Pasos Doble</b>
+                    <b>S/ 605.90 C/U</b>
+                    <p class="title">BRONCO AMERICA LADDER Escalera Tijera Fibra de Vidrio 4 Pasos Doble</p>
+                    <a href="" data-id="8" class="btn-add-cart">Agregar al carrito</a>
+                </div>
+                </div>
+                <div class="carts">
+                <div class="producto-item" marca="BRONCO AMERICA LADDER">
+                    <div>
+                    <img src="Escalera/BRONCO AMERICA LADDER/Escalera Tijera Fibra de Vidrio 5 Pasos Doble - 759.9.jpg" alt=""></a>
+                    <p>S/.<span>759.90</span></p>
+                    </div>
+                    <b>BRONCO AMERICA LADDER Escalera Tijera Fibra de Vidrio 5 Pasos Doble</b>
                     <b>S/ 759.90 C/U</b> 
-                    <a href="#">COMPRAR</a>
+                    <p class="title">BRONCO AMERICA LADDER Escalera Tijera Fibra de Vidrio 5 Pasos Doble</p>
+                    <a href="" data-id="9" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="BRONCO AMERICA LADDER">
-                    <a href="Escalera Tijera Fibra de Vidrio 6 Paso.html"><img src="Escalera/BRONCO AMERICA LADDER/Escalera Tijera Fibra de Vidrio 6 Pasos Simple - 597.9.jpg" alt=""></a>
-                    <p>BRONCO AMERICA LADDER Escalera Tijera Fibra de Vidrio 6 Pasos Simple</p>
+                    <div>
+                    <img src="Escalera/BRONCO AMERICA LADDER/Escalera Tijera Fibra de Vidrio 6 Pasos Simple - 597.9.jpg" alt=""></a>
+                    <p>S/.<span>597.90</span></p>
+                    </div>
+                    <b>BRONCO AMERICA LADDER Escalera Tijera Fibra de Vidrio 6 Pasos Simple</b>
                     <b>S/ 597.90 C/U</b> 
-                    <a href="#">COMPRAR</a>
+                    <p class="title">BRONCO AMERICA LADDER Escalera Tijera Fibra de Vidrio 6 Pasos Simple</p>
+                    <a href="" data-id="10" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="BRONCO AMERICA LADDER">
-                    <a href="Escalera Tijera Fibra de Vidrio 7 Pasos Simple.html"><img src="Escalera/BRONCO AMERICA LADDER/Escalera Tijera Fibra de Vidrio 7 Pasos Simple - 819.9.jpg" alt=""></a>
-                    <p>BRONCO AMERICA LADDER Escalera Tijera Fibra de Vidrio 7 Pasos Simple</p>
-                    <b>S/ 819.90 C/U</b> 
-                    <a href="#">COMPRAR</a>
+                    <div>
+                    <img src="Escalera/BRONCO AMERICA LADDER/Escalera Tijera Fibra de Vidrio 7 Pasos Simple - 819.9.jpg" alt=""></a>
+                    <p>S/.<span>819.90</span></p>
+                    </div>
+                    <b>BRONCO AMERICA LADDER Escalera Tijera Fibra de Vidrio 7 Pasos Simple</b>
+                    <b>S/ 819.90 C/U</b>
+                    <p class="title">BRONCO AMERICA LADDER Escalera Tijera Fibra de Vidrio 7 Pasos Simple</p>
+                    <a href="" data-id="11" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="JUST HOME COLECCTION">
-                    <a href="Escalera Tijera Metal 2 Pasos.html"><img src="Escalera/JUST HOME COLLECTION/Escalera Tijera Metal 2 Pasos - 129.9.jpg" alt=""></a>
-                    <p>JUST HOME COLECCTION Escalera Tijera Metal 2 Pasos</p>
+                    <div>
+                    <img src="Escalera/JUST HOME COLLECTION/Escalera Tijera Metal 2 Pasos - 129.9.jpg" alt=""></a>
+                    <p>S/.<span>129.90</span></p>
+                    </div>
+                    <b>JUST HOME COLECCTION Escalera Tijera Metal 2 Pasos</b>
                     <b>S/ 129.90 C/U</b> 
-                    <a href="#">COMPRAR</a>
+                    <p class="title">JUST HOME COLECCTION Escalera Tijera Metal 2 Pasos</p>
+                    <a href="" data-id="12" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="JUST HOME COLECCTION">
-                    <a href="Escalera Tijera Metal 3 Pasos.html"><img src="Escalera/JUST HOME COLLECTION/Escalera Tijera Metal 3 Pasos - 146.9.jpg" alt=""></a>
-                    <p>JUST HOME COLECCTION Escalera Tijera Metal 3 Pasos</p>
+                    <div>
+                    <img src="Escalera/JUST HOME COLLECTION/Escalera Tijera Metal 3 Pasos - 146.9.jpg" alt=""></a>
+                    <p>S/.<span>146.90</span></p>
+                    </div>
+                    <b>JUST HOME COLECCTION Escalera Tijera Metal 3 Pasos</b>
                     <b>S/ 146.90 C/U</b> 
-                    <a href="#">COMPRAR</a>
+                    <p class="title">JUST HOME COLECCTION Escalera Tijera Metal 3 Pasos</p>
+                    <a href="" data-id="13" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="REDLINE">
-                    <a href="Escalera Articulada Aluminio 12 Pasos.html"><img src="Escalera/REDLINE/Escalera Articulada Aluminio 12 Pasos - 299.9.jpg" alt=""></a>
-                    <p>REDLINE Escalera Articulada Aluminio 12 Pasos </p>
+                    <div>
+                    <img src="Escalera/REDLINE/Escalera Articulada Aluminio 12 Pasos - 299.9.jpg" alt=""></a>
+                    <p>S/.<span>299.90</span></p>
+                    </div>
+                    <b>REDLINE Escalera Articulada Aluminio 12 Pasos</b>
                     <b>S/ 299.90 C/U</b> 
-                    <a href="#">COMPRAR</a>
+                    <p class="title">REDLINE Escalera Articulada Aluminio 12 Pasos</p>
+                    <a href="" data-id="14" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="REDLINE">
-                    <a href="Escalera Telescópica Aluminio 14 Pasos.html"><img src="Escalera/REDLINE/Escalera Telescópica Aluminio 14 Pasos - 479.9.jpg" alt=""></a>
-                    <p>REDLINE Escalera Telescópica Aluminio 14 Pasos </p>
+                    <div>
+                    <img src="Escalera/REDLINE/Escalera Telescópica Aluminio 14 Pasos - 479.9.jpg" alt=""></a>
+                    <p>S/.<span>479.90</span></p>
+                    </div>                    
+                    <b>REDLINE Escalera Telescópica Aluminio 14 Pasos</b>
                     <b>S/ 479.90 C/U</b> 
-                    <a href="#">COMPRAR</a>
+                    <p class="title">REDLINE Escalera Telescópica Aluminio 14 Pasos</p>
+                    <a href="" data-id="15" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="REDLINE">
-                    <a href="Escalera Tijera Aluminio 3 Pasos.html"><img src="Escalera/REDLINE/Escalera Tijera Aluminio 3 Pasos - 119.9.jpg" alt=""></a>
-                    <p>REDLINE Escalera Tijera Aluminio 3 Pasos </p>
+                    <div>
+                    <img src="Escalera/REDLINE/Escalera Tijera Aluminio 3 Pasos - 119.9.jpg" alt=""></a>
+                    <p>S/.<span>119.90</span></p>
+                    </div>
+                    <b>REDLINE Escalera Tijera Aluminio 3 Pasos</b>
                     <b>S/ 119.90 C/U</b> 
-                    <a href="#">COMPRAR</a>
+                    <p class="title">REDLINE Escalera Tijera Aluminio 3 Pasos</p>
+                    <a href="" data-id="16" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="REDLINE">
+                    <div>
                     <img src="Escalera/REDLINE/Escalera Tijera Aluminio 4 Pasos - 199.9.jpg" alt="">
-                    <p>REDLINE Escalera Tijera Aluminio 4 Pasos </p>
+                    <p>S/.<span>119.90</span></p>
+                    </div>
+                    <b>REDLINE Escalera Tijera Aluminio 4 Pasos</b>
                     <b>S/ 199.90 C/U</b> 
-                    <a href="#">COMPRAR</a>
+                    <p class="title">REDLINE Escalera Tijera Aluminio 4 Pasos</p>
+                    <a href="" data-id="17" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="REDLINE">
+                    <div>
                     <img src="Escalera/REDLINE/Escalera Tijera Aluminio 5 Pasos - 169.9.jpg" alt="">
-                    <p>REDLINE Escalera Tijera Aluminio 5 Pasos </p>
+                    <p>S/.<span>169.90</span></p>
+                    </div>
+                    <b>REDLINE Escalera Tijera Aluminio 5 Pasos</b>
                     <b>S/ 169.90 C/U</b> 
-                    <a href="#">COMPRAR</a>
+                    <p class="title">REDLINE Escalera Tijera Aluminio 5 Pasos</p>
+                    <a href="" data-id="18" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="REDLINE">
+                    <div>
                     <img src="Escalera/REDLINE/Escalera Tijera Aluminio 5 Pasos - 239.9.jpg" alt="">
-                    <p>REDLINE Escalera Tijera Aluminio 5 Pasos </p>
+                    <p>S/.<span>239.90</span></p>
+                    </div>
+                    <b>REDLINE Escalera Tijera Aluminio 5 Pasos</b>
                     <b>S/ 239.90 C/U</b> 
-                    <a href="#">COMPRAR</a>
+                    <p class="title">REDLINE Escalera Tijera Aluminio 5 Pasos</p>
+                    <a href="" data-id="19" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="REDLINE">
+                    <div>
                     <img src="Escalera/REDLINE/Escalera Tijera Aluminio 9 pasos - 559.9.jpg" alt="">
-                    <p>REDLINE Escalera Tijera Aluminio 9 Pasos </p>
+                    <p>S/.<span>559.90</span></p>
+                    </div>
+                    <b>REDLINE Escalera Tijera Aluminio 9 Pasos</b>
                     <b>S/ 559.90 C/U</b> 
-                    <a href="#">COMPRAR</a>
+                    <p class="title">REDLINE Escalera Tijera Aluminio 9 Pasos</p>
+                    <a href="" data-id="20" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="REDLINE">
+                    <div>
                     <img src="Escalera/REDLINE/Escalera Tijera Fibra de Vidrio 6 Pasos - 409.9.jpg" alt="">
-                    <p>REDLINE Escalera Tijera Fibra de Vidrio 6 Pasos </p>
+                    <p>S/.<span>409.90</span></p>
+                    </div>
+                    <b>REDLINE Escalera Tijera Fibra de Vidrio 6 Pasos</b>
                     <b>S/ 409.90 C/U</b> 
-                    <a href="#">COMPRAR</a>
+                    <p class="title">REDLINE Escalera Tijera Fibra de Vidrio 6 Pasos</p>
+                    <a href="" data-id="21" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="REDLINE">
+                    <div>
                     <img src="Escalera/REDLINE/Escalera Tijera Aluminio 7 Pasos-409.90.jpg" alt="">
-                    <p>REDLINE Escalera Tijera Aluminio 7 Pasos </p>
+                    <p>S/.<span>409.90</span></p>
+                    </div>
+                    <b>REDLINE Escalera Tijera Aluminio 7 Pasos </b>
                     <b>S/ 409.90 C/U</b> 
-                    <a href="#">COMPRAR</a>
+                    <p class="title">REDLINE Escalera Tijera Aluminio 7 Pasos</p>
+                    <a href="" data-id="22" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="REDLINE">
+                    <div>
                     <img src="Escalera/REDLINE/Escalera Telescópica Aluminio 20 Pasos-899.90.jpg" alt="">
-                    <p>REDLINE Escalera Telescópica Aluminio 20 Pasos </p>
+                    <p>S/.<span>899.90</span></p>
+                    </div>
+                    <b>REDLINE Escalera Telescópica Aluminio 20 Pasos</b>
                     <b>S/ 899.90 C/U</b> 
-                    <a href="#">COMPRAR</a>
+                    <p class="title">REDLINE Escalera Telescópica Aluminio 20 Pasos</p>
+                    <a href="" data-id="23" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="REDLINE">
+                    <div>
                     <img src="Escalera/REDLINE/Escalera Telescópica Aluminio 24 Pasos-799.90.jpg" alt="">
-                    <p>REDLINE Escalera Telescópica Aluminio 24 Pasos </p>
+                    <p>S/.<span>799.90</span></p>
+                    </div>
+                    <b>REDLINE Escalera Telescópica Aluminio 24 Pasos </b>
                     <b>S/ 799.90 C/U</b> 
-                    <a href="#">COMPRAR</a>
+                    <p class="title">REDLINE Escalera Telescópica Aluminio 24 Pasos</p>
+                    <a href="" data-id="24" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+                <div class="carts">
                 <div class="producto-item" marca="UBERMANN">
+                    <div>
                     <img src="Escalera/URBERMAN/Escalera Tijera Acero y Polipropileno 3 Pasos - 169.9.jpg" alt="">
-                    <p>UBERMANN Escalera Tijera Acero y Polipropileno 3 Pasos</p>
+                    <p>S/.<span>169.9</span></p>
+                    </div>
+                    <b>UBERMANN Escalera Tijera Acero y Polipropileno 3 Pasos</b>
                     <b>S/ 169.9 C/U</b>
-                    <a href="#">COMPRAR</a>
+                    <p class="title">UBERMANN Escalera Tijera Acero y Polipropileno 3 Pasos</p>
+                    <a href="" data-id="25" class="btn-add-cart">Agregar al carrito</a>
                 </div>
+                </div>
+            </div>
             </section>
+        </section>
+        <script>
+            function showCart(x){
+                document.getElementById("products-id").style.display = "block";
+            }
+            function closeBtn(){
+                 document.getElementById("products-id").style.display = "none";
+            }
+        </script>
         </div>  
     </div>
+    <script src="./custom.js"></script>
 </body>
 </html>
